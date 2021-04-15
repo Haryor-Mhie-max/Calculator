@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #F1F5F8;
+  position: relative;
+}
+body::before,
+body::after{
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  z-index: -22;
+}
+body::before{
+  top: 2%;
+  left: 2%;
+  background: orangered;
+}
+body::after{
+  bottom: 2%;
+  right: 2%;
+  background: rebeccapurple;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  padding: 2rem;
+}
+.calc{
+  box-shadow: 0 0 3rem rgba(58, 77, 143, .5);
+  border-radius: .6rem;
+  padding: 1rem .5rem;
+  background: #fff;
+  
+}
+
+.view,
+.result,
+.calc-body{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.view,
+.result{
+  height: 5rem;
+  width: 260px;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-weight: 700;
+  user-select: none;
+  background: #fff;
+
+}
+.view{
+  font-size: 2rem;
+}
+.result{
+  font-size: 2.5rem;
+  color: #3a4d8f;
+  border-bottom: 1px solid #eee;
+  margin-bottom: .6rem;
+}
+.calc-body span{
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin: .5rem;
+  box-shadow: 
+  -2px 2px 4px rgba(58, 77, 143, .5),
+  3px -3px 3px rgba(255,255,255,.15);
+  cursor: pointer;
+
+}
+span.equal{
+  background: #3a4d8f;
+  color: #fff;
+  border-radius: 3.5rem;
+  grid-column: span 2;
+  width: 120px;
+}
+.control{
+  color: #3a4d8f ;
+}
+.footer{
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+.footer i{
+  color: #3a4d8f;
+}
+@media screen and (min-width: 600px) {
+  body::before{
+  top: 22%;
+  left: 22%;
+  background: orangered;
+}
+body::after{
+  bottom: 22%;
+  right: 22%;
+  background: rebeccapurple;
+}
+}

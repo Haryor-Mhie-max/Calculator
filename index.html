@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome -->
+  <link
+  rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.css"/>
+
+  <link rel="stylesheet" href="css/index.css">
+  <title>Calculator</title>
+</head>
+<body>
+	<div class="container">
+	<h1>Simple Calculator</h1>
+	  <form name="calc" class="calc">
+	      <input type="text" name="view" class="view" readonly/>
+	      <input type="number" name="result" class="result"  readonly=""/>
+	    <div class="calc-body">
+	      <span class="btn control" onclick="document.calc.result.value=document.calc.view.value=''">AC</span>
+	      <span class="btn control" onclick="document.calc.view.value+='%'">%</span>
+	      <span class="btn control" onclick="document.calc.view.value+='/'"><i class="fas fa-divide"></i></span>
+	      <span class="btn control del" onclick="document.calc.result.value=del()"><i class="fas fa-backspace"></i></span>
+	      <span class="btn " onclick="document.calc.view.value+='7'">7</span>
+	      <span class="btn " onclick="document.calc.view.value+='8'">8</span>
+	      <span class="btn " onclick="document.calc.view.value+='9'">9</span>
+	      <span class="btn control" onclick="document.calc.view.value+='*'"><i class="fas fa-times"></i></span>
+	      <span class="btn " onclick="document.calc.view.value+='4'">4</span>
+	      <span class="btn " onclick="document.calc.view.value+='5'">5</span>
+	      <span class="btn " onclick="document.calc.view.value+='6'">6</span>
+	      <span class="btn control" onclick="document.calc.view.value+='-'"><i class="fas fa-minus"></i></span>
+	      <span class="btn " onclick="document.calc.view.value+='3'">3</span>
+	      <span class="btn " onclick="document.calc.view.value+='2'">2</span>
+	      <span class="btn " onclick="document.calc.view.value+='1'">1</span>
+	      <span class="btn control" onclick="document.calc.view.value+='+'"><i class="fas fa-plus"></i></span>
+	      <span class="btn control" onclick="document.calc.view.value+='0'">0</span>
+	      <span class="btn " onclick="document.calc.view.value+='.'">.</span>
+	      <span class="btn control equal" onclick="document.calc.result.value=eval(document.calc.view.value)"><i class="fas fa-equals"></i></span>
+	    </div>
+	  </form>
+	  <p class="footer">Made with <i class="fas fa-grin-hearts"></i> by Ayomide</p>
+	</div>
+	  <script src="js/index.js"></script>
+
+</body>
+</html>
