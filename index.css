@@ -85,17 +85,17 @@ h1{
   cursor: pointer;
 
 }
+span.control{
+  color: #3a4d8f ;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
 span.equal{
   background: #3a4d8f;
   color: #fff;
   border-radius: 3.5rem;
   grid-column: span 2;
   width: 120px;
-}
-span.control{
-  color: #3a4d8f ;
-  font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .footer{
   text-align: center;
